@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotHesaplama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
+</head>
+
+
+
+
+
+        <!-- main başlangıcı -->
+        <main>
+            
+            <!-- container section başlangıcı -->
+            <section class="container mt-5 font-monospace">
+               
+               <!-- row başlangıcı -->
+                <div class="row justify-content-center">
+                    
+                    
+                    <div class="col-md-8 text-center">
+                        <h1 class="border fs-1 ">
+                            Ders Sonucu
+                        </h1>
+                        <!-- if else script'i burada başlıyor -->
+                        <p id="p-ortalama" class="">
+                            <script>
+                                if (Ortalama  <= 100 && Ortalama >= 0) {
+                                     if  ( Ortalama >= 0 && Ortalama <= 30 ) 
+                                     {document.write(`<span class="fw-bolder"> Notunuz=${Math.round(Ortalama)} </span> <br> 
+                                     Üzgünüz FF Aldınız, Dersten Kaldınız <br>
+                                     ${SAD}
+                                     `)}
+                                     
+                                     else if ( Ortalama >= 31 && Ortalama <= 49 ) 
+                                     {document.write(`<span class="fw-bolder"> Notunuz=${Math.round(Ortalama)} </span> <br> 
+                                     DD Aldınız!<br> 
+                                     ${SMİLE}
+                                     `)}
+
+                                     else if ( Ortalama >= 50 && Ortalama <= 69 ) 
+                                     {document.write(`<span class="fw-bolder"> Notunuz=${Math.round(Ortalama)} </span> <br> 
+                                     CC Aldınız!<br>
+                                     ${SMİLE}
+                                     `)}
+
+                                     else if ( Ortalama >= 70 && Ortalama <= 84 ) 
+                                     {document.write(`<span class="fw-bolder"> Notunuz=${Math.round(Ortalama)} </span> <br> 
+                                     BB Aldınız!<br>
+                                     ${HAPPY}
+                                     `)}
+
+                                     else if ( Ortalama >= 85 && Ortalama <= 100 ) 
+                                     {document.write(`<span class="fw-bolder"> Notunuz=${Math.round(Ortalama)} </span> <br> 
+                                     Tebrikler, AA Aldınız!<br>
+                                     ${HAPPY}
+                                     `)}
+                                     
+                                    }
+
+
+                                else {document.write(`Geçersiz Bilgi Girdiniz!<br>
+                                     <img src="https://images.squarespace-cdn.com/content/v1/51538b4ce4b0865b51b1f193/1408351468053-FSO0ZMCDPLI9SY1VXWUW/7AdxEg6.gif" 
+                                     alt="" weight="300", height=300>`) }
+                            </script>
+                            
+                        </p><!-- if else script'i burada bitiyor -->
+
+                        <p class="text-start fw-bolder fs-5 mt-5">Buradaki sonuç girdiğiniz değerlerin karşılıdığır. <br>
+                            Eğer sonuçtan memnun değilseniz lütfen siteyi yenileyip tekrar değer giriniz.</p>
+
+                        <p id="timer" class="text-end mt-5 fw-bold border"></p>  <!-- içinde saatın olduuğu script bu -->
+                        
+                        
+                       
+
+                       
+                        
+                    </div>
+                     
+                </div> <!-- row bitişi -->
+           
+            </section> <!-- container section başlangıcı -->
+        
+        
+        </main> <!-- main bitişi -->
+
+
+
+
+
+
+
+
+
+<body>
+    
+
+
+
+
+
+<!-- main.js dosyası eklemesi -->
+<script src="/main.js"></script>
+
+<!-- Bootstrap java eklemeleri -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+</body>
+</html>
